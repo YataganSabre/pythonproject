@@ -18,15 +18,15 @@ Content = file.read()
 CoList = Content.split("\n")
 
 #Counter for however amount of months from start (6 in this case)
+CounterM = 0
 Counter = 0
+monthcheck = true
 for i in CoList:
+    if monthcheck == true:
+        CounterM += 1
     Counter += 1
-    if '30/Apr/1995:23:57:25' in i: #When april ends, so the end of the 6th month from October
-        print("This is the number of requests (lines) from the first 6 months, starting on October 24th: ", Counter)
-        break
-#Resets counter, does it again for the entire log
-Counter = 0
-for i in CoList:
-    Counter += 1
-          
+    if '24/Apr/1995:23:58:32' in i: #When april ends, so the end of the 6th month from October
+           monthcheck = false
+        
+print("This is the number of requests (lines) from the first 6 months, starting on October 24th: ", CounterM)         
 print("This is the number of requests (lines) in the log: ", Counter)
