@@ -17,7 +17,7 @@ Content = file.read()
 CoList = Content.split("\n")
     
 Counter = 0
-for i in Colist
+for i in Colist:
     Counter += 1
     if '30/Apr/1995:23:57:25' in i:
         print("This is the number of lines from the 24th of October to the 30th of April (6 months): " + Counter)
