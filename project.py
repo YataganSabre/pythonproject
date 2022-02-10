@@ -21,10 +21,10 @@ Counter = 0
 for i in CoList:
     Counter += 1
     if '30/Apr/1995:23:57:25' in i:
-        print("This is the number of lines from the 24th of October to the 30th of April (6 months): ", Counter)
+        print("This is the number of requests (lines) from the first 6 months, starting on October 24th: ", Counter)
         break
 Counter = 0
 for i in CoList:
     Counter += 1
           
-print("This is the number of lines in the file: ", Counter)
+print("This is the number of requests (lines) in the log: ", Counter)
