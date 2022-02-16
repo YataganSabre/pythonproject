@@ -28,5 +28,5 @@ for i in CoList:
     if '11/Apr/1995:00:00:16' in i: #checks start of 6 month period to end
            monthcheck = True
 #print outputs
-print("This is the number of requests (lines) from the first 6 months, starting on October 24th and ending on April 24th: ", CounterM)         
+print("This is the number of requests (lines) from the last 6 months: ", CounterM)         
 print("This is the number of requests (lines) in the log: ", Counter)
