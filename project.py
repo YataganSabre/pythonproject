@@ -27,6 +27,7 @@ for i in CoList:
     Counter += 1 #counts total requests
     if '11/Apr/1995:00:00:16' in i: #checks start of 6 month period to end
            monthcheck = True
+           CounterM += 1
 #print outputs
 print("This is the number of requests (lines) from the last 6 months: ", CounterM)         
 print("This is the number of requests (lines) in the log: ", Counter)
