@@ -20,13 +20,13 @@ CoList = Content.split("\n")
 #Intialize different stuff i'll use in a bit
 CounterM = 0
 Counter = 0
-monthcheck = True
+monthcheck = False
 for i in CoList:
-    if monthcheck == True: #counts until the 6 month period ends, which the next if statement checks
+    if monthcheck == True: 
         CounterM += 1
     Counter += 1 #counts total requests
-    if '24/Apr/1995:23:58:32' in i: #when 6 month period ends, change monthcheck to false so it stops counting for that 6 months
-           monthcheck = False
+    if '11/Apr/1995:00:00:16' in i: #checks start of 6 month period to end
+           monthcheck = True
 #print outputs
 print("This is the number of requests (lines) from the first 6 months, starting on October 24th and ending on April 24th: ", CounterM)         
 print("This is the number of requests (lines) in the log: ", Counter)
