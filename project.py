@@ -1,5 +1,5 @@
 #Created by Kaan M.
-#This project, per instructions is intended to count the number of requests (lines) for the first 6 months, then the number of lines for the entire log.
+#This project, per instructions is intended to count the number of requests (lines) for the last 6 months, then the number of lines for the entire log.
 import urllib.request
 import os.path
 #checks to see if the file exists, if it does NOT exist, download it and countine running.
